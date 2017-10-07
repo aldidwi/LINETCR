@@ -15,7 +15,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
+helpMessage =""" Ultimate Bot
 [Id︎]
 [Mid]
 [Me︎]
@@ -92,7 +92,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"Chivas ",
+    "cName":"Ult C0de ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -512,50 +512,50 @@ def bot(op):
             elif ("Cv1 gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Cv1 gn ","")
+                    X.name = msg.text.replace("Ult1 gn ","")
                     ki.updateGroup(X)
                 else:
                     ki.sendText(msg.to,"It can't be used besides the group.")
             elif ("Cv2 gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Cv2 gn ","")
+                    X.name = msg.text.replace("Ult2 gn ","")
                     kk.updateGroup(X)
                 else:
                     kk.sendText(msg.to,"It can't be used besides the group.")
-            elif ("Cv3 gn " in msg.text):
+            elif ("Ult3 gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Cv3 gn ","")
+                    X.name = msg.text.replace("Ult3 gn ","")
                     kc.updateGroup(X)
                 else:
                     kc.sendText(msg.to,"It can't be used besides the group.")
             elif "Kick " in msg.text:
                 midd = msg.text.replace("Kick ","")
                 cl.kickoutFromGroup(msg.to,[midd])
-            elif "Cv1 kick " in msg.text:
-                midd = msg.text.replace("Cv1 kick ","")
+            elif "Ult1 kick " in msg.text:
+                midd = msg.text.replace("Ult1 kick ","")
                 ki.kickoutFromGroup(msg.to,[midd])
-            elif "Cv2 kick " in msg.text:
-                midd = msg.text.replace("Cv2 kick ","")
+            elif "Ult2 kick " in msg.text:
+                midd = msg.text.replace("Ult2 kick ","")
                 kk.kickoutFromGroup(msg.to,[midd])
-            elif "Cv3 kick " in msg.text:
-                midd = msg.text.replace("Cv3 kick ","")
+            elif "Ult3 kick " in msg.text:
+                midd = msg.text.replace("Ult3 kick ","")
                 kc.kickoutFromGroup(msg.to,[midd])
             elif "Invite " in msg.text:
                 midd = msg.text.replace("Invite ","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "Cv1 invite " in msg.text:
-                midd = msg.text.replace("Cv1 invite ","")
+            elif "Ult1 invite " in msg.text:
+                midd = msg.text.replace("Ult1 invite ","")
                 ki.findAndAddContactsByMid(midd)
                 ki.inviteIntoGroup(msg.to,[midd])
-            elif "Cv2 invite " in msg.text:
-                midd = msg.text.replace("Cv2 invite ","")
+            elif "Ult2 invite " in msg.text:
+                midd = msg.text.replace("Ult2 invite ","")
                 kk.findAndAddContactsByMid(midd)
                 kk.inviteIntoGroup(msg.to,[midd])
-            elif "Cv3 invite " in msg.text:
-                midd = msg.text.replace("Cv3 invite ","")
+            elif "Ult3 invite " in msg.text:
+                midd = msg.text.replace("Ult3 invite ","")
                 kc.findAndAddContactsByMid(midd)
                 kc.inviteIntoGroup(msg.to,[midd])
             elif msg.text in ["Me"]:
@@ -577,21 +577,21 @@ def bot(op):
                                     'MSGTPL': '5'}
                 msg.text = None
                 cl.sendMessage(msg)
-            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Cv1 gift"]:
+            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Ult1 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
                                     'PRDTYPE': 'THEME',
                                     'MSGTPL': '6'}
                 msg.text = None
                 ki.sendMessage(msg)
-            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Cv2 gift"]:
+            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Ult2 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
                                     'PRDTYPE': 'THEME',
                                     'MSGTPL': '8'}
                 msg.text = None
                 kk.sendMessage(msg)
-            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Cv3 gift"]:
+            elif msg.text in ["æ„›ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ","Ult3 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
                                     'PRDTYPE': 'THEME',
@@ -684,7 +684,7 @@ def bot(op):
                         kk.sendText(msg.to,"Can not be used outside the group")
                     else:
                         kk.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Cv3 ourl","Cv3 link on"]:
+            elif msg.text in ["Ult3 ourl","Ult3 link on"]:
                 if msg.toType == 2:
                     X = kc.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -712,7 +712,7 @@ def bot(op):
                         cl.sendText(msg.to,"Can not be used outside the group")
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Cv1 curl","Cv1 link off"]:
+            elif msg.text in ["Ult1 curl","Ult1 link off"]:
                 if msg.toType == 2:
                     X = ki.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -726,7 +726,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Cv2 curl","Cv2 link off"]:
+            elif msg.text in ["Ult2 curl","Ult2 link off"]:
                 if msg.toType == 2:
                     X = kk.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -740,13 +740,13 @@ def bot(op):
                         kk.sendText(msg.to,"Can not be used outside the group")
                     else:
                         kk.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Cv3 curl","Cv3 link off"]:
+            elif msg.text in ["Ult3 curl","Ult3 link off"]:
                 if msg.toType == 2:
                     X = kc.getGroup(msg.to)
                     X.preventJoinByTicket = True
                     kc.updateGroup(X)
                     if wait["lang"] == "JP":
-                        kc.sendText(msg.to,"Done Chivas")
+                        kc.sendText(msg.to,"Done Ultimate")
                     else:
                         kc.sendText(msg.to,"already close")
                 else:
@@ -806,11 +806,11 @@ def bot(op):
                 kc.sendText(msg.to,Cmid)
             elif "Mid" == msg.text:
                 cl.sendText(msg.to,mid)
-            elif "Cv1 mid" == msg.text:
+            elif "Ult1 mid" == msg.text:
                 ki.sendText(msg.to,Amid)
-            elif "Cv2 mid" == msg.text:
+            elif "Ult2 mid" == msg.text:
                 kk.sendText(msg.to,Bmid)
-            elif "Cv3 mid" == msg.text:
+            elif "Ult3 mid" == msg.text:
                 kc.sendText(msg.to,Cmid)
             elif msg.text in ["Wkwk"]:
                 msg.contentType = 7
@@ -1372,7 +1372,7 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki.updateGroup(G)
 
-            elif msg.text in ["Cv1 join"]:
+            elif msg.text in ["Ult1 join"]:
                   X = cl.getGroup(msg.to)
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1384,7 +1384,7 @@ def bot(op):
                   ki.updateGroup(G)
                   Ticket = kk.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["Cv2 join"]:
+            elif msg.text in ["Ult2 join"]:
                   X = cl.getGroup(msg.to)
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1398,7 +1398,7 @@ def bot(op):
 
 #-----------------------------------------------
 #.acceptGroupInvitationByTicket(msg.to,Ticket)
-            elif msg.text in ["Cv3 join"]:
+            elif msg.text in ["Ult3 join"]:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -1434,21 +1434,21 @@ def bot(op):
                         kk.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Cv1 @bye"]:
+            elif msg.text in ["Ult1 @bye"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
                         ki.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Cv2 @bye"]:
+            elif msg.text in ["Ult2 @bye"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
                         kk.leaveGroup(msg.to)
                     except:
                         pass
-            elif msg.text in ["Cv3 @bye"]:
+            elif msg.text in ["Ult3 @bye"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -1527,7 +1527,7 @@ def bot(op):
                                     kicker.kickoutFromGroup(msg.to,[target])
                                     print (msg.to,[g.mid])
                                 except:
-                                    ki.sendText(msg.to,"Succes Cv")
+                                    ki.sendText(msg.to,"Succes Ult")
                                     kk.sendText(msg.to,"Fuck You")
             elif "Blacklist @ " in msg.text:
                 _name = msg.text.replace("Blacklist @ ","")
@@ -1545,7 +1545,7 @@ def bot(op):
                                     wait["blacklist"][target] = True
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    k3.sendText(msg.to,"Succes Cv")
+                                    k3.sendText(msg.to,"Succes Ult")
                                 except:
                                     ki.sendText(msg.to,"error")
             elif "Ban @" in msg.text:
@@ -1561,19 +1561,19 @@ def bot(op):
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        ki.sendText(msg.to,"Not found Cv")
-                        kk.sendText(msg.to,"Not found Cv")
-                        kc.sendText(msg.to,"Not found Cv")
+                        ki.sendText(msg.to,"Not found Ult")
+                        kk.sendText(msg.to,"Not found Ult")
+                        kc.sendText(msg.to,"Not found Ult")
                     else:
                         for target in targets:
                             try:
                                 wait["blacklist"][target] = True
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                cl.sendText(msg.to,"Succes Cv")
-                                ki.sendText(msg.to,"Succes Cv")
-                                kk.sendText(msg.to,"Succes Cv")
-                                kc.sendText(msg.to,"Succes Cv")
+                                cl.sendText(msg.to,"Succes Ult")
+                                ki.sendText(msg.to,"Succes Ult")
+                                kk.sendText(msg.to,"Succes Ult")
+                                kc.sendText(msg.to,"Succes Ult")
                             except:
                                 ki.sendText(msg.to,"Error")
                                 kk.sendText(msg.to,"Error")
@@ -1591,28 +1591,28 @@ def bot(op):
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        ki.sendText(msg.to,"Not found Cv")
-                        kk.sendText(msg.to,"Not found Cv")
-                        kc.sendText(msg.to,"Not found Cv")
+                        ki.sendText(msg.to,"Not found Ult")
+                        kk.sendText(msg.to,"Not found Ult")
+                        kc.sendText(msg.to,"Not found Ult")
                     else:
                         for target in targets:
                             try:
                                 del wait["blacklist"][target]
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                cl.sendText(msg.to,"Succes Cv")
-                                ki.sendText(msg.to,"Succes Cv")
-                                kk.sendText(msg.to,"Succes Cv")
-                                kc.sendText(msg.to,"Succes Cv")
+                                cl.sendText(msg.to,"Succes Ult")
+                                ki.sendText(msg.to,"Succes Ult")
+                                kk.sendText(msg.to,"Succes Ult")
+                                kc.sendText(msg.to,"Succes Ult")
                             except:
-                                ki.sendText(msg.to,"Succes Cv")
-                                kk.sendText(msg.to,"Succes Cv")
-                                kc.sendText(msg.to,"Succes Cv")
+                                ki.sendText(msg.to,"Succes Ult")
+                                kk.sendText(msg.to,"Succes Ult")
+                                kc.sendText(msg.to,"Succes Ult")
 #-----------------------------------------------
             elif msg.text in ["Test"]:
-                ki.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kk.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kc.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
+                ki.sendText(msg.to,"Ok  􀨁􀄻double thumbs up􏿿")
+                kk.sendText(msg.to,"Ok  􀨁􀄻double thumbs up􏿿")
+                kc.sendText(msg.to,"Ok  􀨁􀄻double thumbs up􏿿")
 #-----------------------------------------------
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
@@ -1621,31 +1621,19 @@ def bot(op):
 				kc.sendText(msg.to,(bctxt))
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hi"]:
-                ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Ult say hi"]:
+                ki.sendText(msg.to,"Hi Gaesss 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Hi Gaesss 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Hi Gaesss 􀜁􀅔Har Har􏿿")
 
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
-                ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say chomel pekok"]:
-                ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Ult say Night All","Good Night"]:
+                ki.sendText(msg.to,"Have a nice dream Ult 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Have a nice dream Ult 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Have a nice dream Ult 􀜁􀅔Har Har􏿿")
             elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
+                ki.sendText(msg.to,"Selamat datang di Ultimate Code Family Room")
                 kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
@@ -1654,9 +1642,9 @@ def bot(op):
                 kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #-----------------------------------------------
             elif msg.text in ["Respon","respon"]:
-                ki.sendText(msg.to,"Cv1")
-                kk.sendText(msg.to,"Cv2")
-                kc.sendText(msg.to,"Cv3")
+                ki.sendText(msg.to,"Ult1")
+                kk.sendText(msg.to,"Ult2")
+                kc.sendText(msg.to,"Ult3")
 #-----------------------------------------------
 
             elif msg.text in ["Sp","Speed","speed"]:
